@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blaster Force - Javascript Canvas Game</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <script type="module" defer src="./assets/js/main.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet"> 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-54089614-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-54089614-1');
+  </script>
+</head>
+<body>
+
+  <header>
+    <h1>Blaster Force <small>Do you have what it takes to save the world?</small></h1>
+    <p><strong>Instructions:</strong></p>
+    <ul>
+      <li>Arrow keys to move the player left, right, up and down.</li>
+      <li>Space bar to shoot.</li>
+      <li>Slow on Edge and Chrome. Great in Firefox</li>
+    </ul>    
+  </header>
+
+  <div id="container">
+    <img id="sprite" src="./assets/images/shooter.png">
+    <canvas id="canvas" width="512" height="512" style="border:1px solid #ccc;"></canvas>
+    
+    <div class="score">
+      <p>Level <span id="current-level"></span> of <span id="game-levels"></span> &nbsp;&nbsp; <strong>Score: <span id="score">0</span></strong></p>
+    </div>
+
+    <div id="message"></div>
+  </div>  
+  
+</body>
+</html>
